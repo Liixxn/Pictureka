@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneRegistro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="-Infinity" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridRegistro" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="30.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="60.0" prefHeight="0.0" />
+          <RowConstraints maxHeight="0.0" minHeight="0.0" percentHeight="10.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Region fx:id="regionRegistro" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #007ab0;" />
+            <ImageView fx:id="imgPaneRegistro" fitHeight="192.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../Imagenes_Multimedia/welcome-15.gif" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </ImageView>
+            <JFXButton fx:id="btnCancelRegistro" onAction="#CancelRegistro" style="-fx-background-color: linear-gradient(#0078af, #00c6e1); -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" text="Cancelar" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRegistrar" onAction="#RegistrarUsuario" style="-fx-background-color: linear-gradient(#0078af, #00c6e1); -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" text="Registrar" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="35.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <GridPane fx:id="gridInfoRegistro" style="-fx-background-color: white;" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="60.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="8.5" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lblUsuarioRegistro" text="Usuario:" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <TextField fx:id="textUsuarioRegistro" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow color="#7bbdff" />
+                     </effect>
+                  </TextField>
+                  <Label fx:id="lblCorreoElectronico" text="Correo electrónico:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <TextField fx:id="textCorreoElectronico" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <effect>
+                        <DropShadow color="#7bbdff" />
+                     </effect>
+                     <GridPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label fx:id="lblDni" text="DNI:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <TextField fx:id="textDni" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <effect>
+                        <DropShadow color="#7bbdff" />
+                     </effect>
+                     <GridPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label fx:id="lblFechaNacimiento" text="Fecha de nacimiento:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                  <Label fx:id="lblContraseniaRegistro" text="Contraseña:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                  <PasswordField fx:id="txtFieldPassword" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow color="#7bbdff" />
+                     </effect>
+                  </PasswordField>
+                  <Label fx:id="lblRepeatPassword" text="Repita la contraseña:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                  <PasswordField fx:id="textFieldRepeatPassword" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11">
+                     <effect>
+                        <DropShadow color="#7bbdff" />
+                     </effect>
+                     <GridPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <JFXDatePicker fx:id="chooserCalendario" defaultColor="#0e9ceb" style="-fx-border-color: #0e9ceb;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </JFXDatePicker>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

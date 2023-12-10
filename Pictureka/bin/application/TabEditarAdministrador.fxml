@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorTabEditarAdmin" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridPaneEditarAdmin" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblUsuarioAdmin" text="Usuario" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textUsuarioAdmin" editable="false" GridPane.columnIndex="1">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <Label fx:id="lblNombreAdmin" text="Nombre" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textNombreAdmin" GridPane.columnIndex="3">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <Label fx:id="lblApellido1Admin" text="Primer apellido" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="lblApellido2Admin" text="Segundo apellido" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <TextField fx:id="textApellido1Admin" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <TextField fx:id="textApellido2Admin" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <Label fx:id="lblEmailAdmin" text="Email" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textEmailAdmin" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <Label fx:id="lblDniAdmin" text="DNI" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textDniAdmin" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <Label fx:id="lblFechaAdmin" text="Fecha de nacimiento" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="lblContraseniaAdmin" text="Contraseña" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textContraseniaAdmin" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></TextField>
+            <DatePicker fx:id="DateFechaAdmin" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <effect>
+                  <DropShadow color="#ff8000" />
+               </effect></DatePicker>
+            <JFXButton fx:id="btnGuardar" onAction="#GuardarAdminEdit" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: FF8000; -fx-border-radius: 15; -fx-border-color: white; -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" text="Guardar cambios" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
