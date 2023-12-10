@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="MyAnchorPane" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridPaneLogin" style="-fx-background-image: url(museumPhoto.jpg);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" percentWidth="40.0" prefWidth="0.0" />
+          <ColumnConstraints maxWidth="0.0" minWidth="0.0" percentWidth="60.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="283.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../../Imagenes_Multimedia/Pictureka_logo2.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="582.0" prefWidth="371.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="lblUsuario" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="84.0" style="-fx-font-size: 23; -fx-text-fill: white;" text="Usuario" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="30.0" right="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textUsuario" prefHeight="27.0" prefWidth="333.0">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="lblContrasenia" alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="124.0" style="-fx-font-size: 23; -fx-text-fill: white;" text="Contraseña">
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="textContrasenia" prefHeight="27.0" prefWidth="333.0">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="5.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <JFXButton fx:id="btnRegistrarse" onAction="#Registrarse" prefHeight="37.0" prefWidth="137.0" style="-fx-cursor: hand; -fx-border-color: black; -fx-background-color: linear-gradient(#4568DC, #B06AB3); -fx-font-family: Courier New; -fx-font-weight: bold; -fx-text-fill: white;" text="Registrarse">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="25.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnInicioSesion" onAction="#InicarSesion" prefHeight="37.0" prefWidth="137.0" style="-fx-cursor: hand; -fx-border-color: black; -fx-background-color: linear-gradient(#4568DC, #B06AB3); -fx-font-family: Courier New; -fx-font-weight: bold; -fx-text-fill: white;" text="Iniciar Sesión" />
+               </children>
+            </VBox>
+            <ImageView fx:id="btnVolver" fitHeight="63.0" fitWidth="76.0" onMouseClicked="#volverAtras" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../Imagenes_Multimedia/restart.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="20.0" top="40.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

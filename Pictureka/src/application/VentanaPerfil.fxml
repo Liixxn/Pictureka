@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Principal" fx:id="anchorPanePrincipal" prefHeight="730.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="BordPanePrincipal" prefHeight="432.0" prefWidth="1156.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <JFXToolbar fx:id="barra" prefHeight="67.0" prefWidth="1156.0" style="-fx-background-color: #FAFAAF;" BorderPane.alignment="CENTER">
+               <left>
+                  <ImageView fx:id="imgRegresar" fitHeight="45.0" fitWidth="50.0" onMouseClicked="#volver" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../Imagenes_Multimedia/volverAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </left>
+            </JFXToolbar>
+         </top>
+         <center>
+            <GridPane style="-fx-background-color: #DDDDDD;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane prefHeight="269.0" prefWidth="1156.0" style="-fx-background-color: #efb810;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="100.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="100.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="imgUsuario1" fitHeight="412.0" fitWidth="428.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <image>
+                              <Image url="@../avatarCliente.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="348.0" prefWidth="1156.0" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="1.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="1.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="LabelUsuario" text="Usuario:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RFechaDNa" text="Fecha de nacimiento" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelFechaDNa" text="Fecha de nacimiento:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="REmail" text="Email" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RDNI" text="DNI" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RUsuario" text="Usuario" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelEmail" text="Email:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelDNI" text="DNI:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelNombre" text="Nombre:" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelApellido2" text="Apellido segundo:" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RApellido2" text="Apellido primero" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RApellido1" text="Apellido primero" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelApellido1" text="Apellido primero:" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="RNombre" text="Nombre" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgReserva" fitHeight="268.0" fitWidth="309.0" onMouseClicked="#abrirReserva" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../../Imagenes_Multimedia/CambiarTicket.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <JFXTextField fx:id="TextFieldUsuario" editable="false" focusColor="#efb810" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="TextFieldDNI" focusColor="#efb810" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="TextFieldEmail" focusColor="#efb810" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font></JFXTextField>
+                        <JFXDatePicker fx:id="DatePickerFecha" defaultColor="#efb810" prefHeight="31.0" prefWidth="271.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <JFXButton fx:id="BotonGuardar" buttonType="RAISED" onMouseClicked="#GuardarInformacion" prefHeight="31.0" prefWidth="95.0" ripplerFill="#edb611" text="Guardar" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                        <JFXButton fx:id="BotonCancelar" buttonType="RAISED" onMouseClicked="#Cancelar" prefHeight="31.0" prefWidth="95.0" text="Cancelar" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                        <ImageView fx:id="imgEditUsuario" fitHeight="132.0" fitWidth="68.0" onMouseClicked="#EditarInformacion" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@../../Imagenes_Multimedia/EditarCliente.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="LabelContrasenia" text="Nueva contraseña:" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXPasswordField fx:id="PasswordField" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXPasswordField>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
