@@ -1,0 +1,15 @@
+
+INGENIERÍA INFORRMÁTICA 2º M21 // UNIVERSIDAD EUROPEA DE MADRID
+PROYECTO: PICTUREKA
+EMPRESA: SAFNIO SOFTWARES
+
+Miembros: Jolie Alain, Oscar González, Ruoyan Zhang y Lian Salmerón
+
+Link al github:
+
+https://github.com/ProyectoInformatica/PR_INF_21-22-pictureka
+
+Link al Trello:
+
+https://trello.com/b/XhHSNo2N/anteproyecto
+
